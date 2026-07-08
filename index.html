@@ -361,6 +361,17 @@ section{scroll-margin-top:80px}
 }
 .placeholder-card h4{font-weight:700;font-size:1.15rem;margin-bottom:6px}
 .placeholder-card p{color:var(--slate-soft);font-size:.98rem}
+.link-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.link-card{
+  display:flex;align-items:center;gap:18px;text-decoration:none;color:inherit;
+  border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 28px;background:#fff;box-shadow:var(--shadow-sm);
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.link-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.link-card .ph-icon{margin:0;flex-shrink:0}
+.link-card h4{font-weight:700;font-size:1.08rem;margin-bottom:3px}
+.link-card p{color:var(--slate-soft);font-size:.9rem}
 .alt{background:var(--paper-2)}
 
 /* ---------- CLOSING ---------- */
@@ -735,15 +746,27 @@ footer{background:var(--navy-900);color:#8ea1b2;padding:40px 28px;border-top:1px
   </div>
 </section>
 
-<!-- TUTORIAIS (placeholder) -->
+<!-- TUTORIAIS -->
 <section class="band alt" id="tutoriais">
   <div class="wrap">
     <div class="section-head reveal">
       <h2>Tutoriais</h2>
     </div>
-    <div class="placeholder-card reveal">
-      <div class="ph-icon">▸</div>
-      <h4>Espaço reservado</h4>
+    <div class="link-cards reveal">
+      <a class="link-card" href="manual_avaliador.pdf" target="_blank" rel="noopener">
+        <div class="ph-icon">▸</div>
+        <div>
+          <h4>Manual do Avaliador</h4>
+          <p>PDF</p>
+        </div>
+      </a>
+      <a class="link-card" href="manual_primeiro_acesso.pdf" target="_blank" rel="noopener">
+        <div class="ph-icon">▸</div>
+        <div>
+          <h4>Manual de primeiro acesso</h4>
+          <p>PDF</p>
+        </div>
+      </a>
     </div>
   </div>
 </section>
@@ -854,15 +877,20 @@ footer{background:var(--navy-900);color:#8ea1b2;padding:40px 28px;border-top:1px
   </div>
 </section>
 
-<!-- LINKS (placeholder) -->
+<!-- LINKS -->
 <section class="band alt" id="links">
   <div class="wrap">
     <div class="section-head reveal">
       <h2>Links úteis</h2>
     </div>
-    <div class="placeholder-card reveal">
-      <div class="ph-icon">↗</div>
-      <h4>Espaço reservado</h4>
+    <div class="link-cards reveal">
+      <a class="link-card" href="start_de_projetos.pdf" target="_blank" rel="noopener">
+        <div class="ph-icon">↗</div>
+        <div>
+          <h4>Start de Projetos</h4>
+          <p>PDF</p>
+        </div>
+      </a>
     </div>
   </div>
 </section>
